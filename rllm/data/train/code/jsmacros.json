@@ -1,0 +1,23 @@
+{
+  "introduction": "JSMacros is a Minecraft mod that allows scripting automation using JavaScript.",
+  "api_reference": {
+    "Player": {
+      "methods": [
+        "Player.getPlayer().getPos() → Returns player's coordinates as {x, y, z}",
+        "Player.openInventory().getSlot(index) → Returns information about the specified slot (0-based index).",
+        "Player.openInventory().getSlot(index).getItemId() → Returns the item's ID (e.g., 'minecraft:golden_apple')"
+      ]
+    },
+    "World": {
+      "methods": [
+        "World.getBlock(x, y, z) → Gets block data at the specified coordinates"
+      ]
+    },
+    "Chat": {
+      "methods": [
+        "Chat.say(message) → Sends a public chat message",
+        "Chat.log(message) → Logs a client-side message (visible only to the user)"
+      ]
+    }
+  }
+}
